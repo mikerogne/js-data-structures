@@ -1,11 +1,10 @@
-import {LinkedList} from "./LinkedList";
-
-const myLinkedList = new LinkedList(1);
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const LinkedList_1 = require("./LinkedList");
+const myLinkedList = new LinkedList_1.LinkedList(1);
 myLinkedList.append(2);
 myLinkedList.append(3);
 myLinkedList.prepend(0);
-
 console.log("Before inserts", myLinkedList.printList());
 myLinkedList.insert(2, 20);
 myLinkedList.insert(2, 21);

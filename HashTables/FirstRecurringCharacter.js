@@ -2,10 +2,10 @@
 function findFirstRecurring(input) {
     const previous = {};
     for (let i = 0; i < input.length; i++) {
-        if (input[i] in previous) {
-            return i;
+        if (previous[input[i]] !== undefined) {
+            return input[i];
         }
-        previous[input[i]] = 1;
+        previous[input[i]] = input[i];
     }
     return undefined;
 }
